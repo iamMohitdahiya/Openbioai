@@ -96,12 +96,14 @@ padding:70px 8%;
 font-size:38px;
 text-align:center;
 margin-bottom:50px;
+color:#0b1220;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:25px;
+align-items:stretch;
 }
 
 .card{
@@ -113,6 +115,9 @@ text-align:center;
 transition:.3s;
 cursor:pointer;
 overflow:hidden;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 }
 
 .card:hover{
@@ -121,8 +126,21 @@ box-shadow:0 20px 40px rgba(0,0,0,.15);
 }
 
 .card h3{
-margin:15px 0;
+        margin:15px 0;
+            color:#0b1220;
+                font-size:22px;
+                
 }
+.card p{
+        color:#555;
+            line-height:1.6;
+                font-size:16px;
+                
+}
+.card .button{
+        margin-top:20px;
+            align-self:center;
+            }
 
 footer{
 background:#0b1220;
