@@ -109,10 +109,14 @@ align-items:stretch;
 .card{
 background:white;
 padding:30px;
+min-height:280px;
+border:1px solid #e8eef5;
 border-radius:16px;
 box-shadow:0 10px 25px rgba(0,0,0,.08);
 text-align:center;
 transition:.3s;
+position:relative;
+isolation:isolate;
 cursor:pointer;
 overflow:hidden;
 display:flex;
@@ -122,6 +126,7 @@ justify-content:space-between;
 
 .card:hover{
 transform:translateY(-8px) scale(1.02);
+border-color:#00d4ff;
 box-shadow:0 20px 40px rgba(0,0,0,.15);
 }
 
@@ -129,6 +134,8 @@ box-shadow:0 20px 40px rgba(0,0,0,.15);
         margin:15px 0;
             color:#0b1220;
                 font-size:22px;
+                font-weight:700;
+                letter-spacing:0.3px;
                 
 }
 .card p{
